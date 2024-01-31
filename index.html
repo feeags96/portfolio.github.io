@@ -43,7 +43,7 @@
 
       <a href="#inicio">Inicio</a>
 
-      <a href="#saibamais">Saiba mais</a>
+      <a id="btnsaibamais"href="#saibamais">Saiba mais</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
@@ -164,6 +164,12 @@
 
 <!-- javascript -->
 <script src="js/script.js"></script>
+
+<script>
+  documento.getElementById("btnsaibamais").addListener("click", function () {
+gtag('event', 'btn-saibamais');
+});
+</script>
 
 
 </body>
