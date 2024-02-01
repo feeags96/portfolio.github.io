@@ -167,7 +167,10 @@
 
 <script>
   document.getElementById("btnsaibamais").addEventListener("click", function () {
-gtag('event', 'btn-saibamais');
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+'event': 'click_cta',
+'cta_name': 'saiba mais'
 });
 </script>
 
