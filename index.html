@@ -43,13 +43,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="header">
     <a href="#"  class="logo">Portfolio</a>
 
-    <nav id="menu" class="navegação">
+    <nav class="navegação">
 
-      <a href="#inicio">Inicio</a>
+      <a id="btnhome"href="#inicio">Inicio</a>
 
       <a id="btnsaibamais"href="#saibamais">Saiba mais</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+      <a id="btnprojetos"href="#projetos">Projetos</a>
+      <a id="btncontato"href="#contato">Contato</a>
     </nav>
 </header>
 
@@ -178,11 +178,27 @@ window.dataLayer.push({
 });
 });
 
-document.getElementById("menu").addEventListener("click", function () {
+document.getElementById("btnhome").addEventListener("click", function () {
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-'event': 'click_menu',
-'menu_name': 'item_menu'
+'event': 'click_cta',
+'cta_name': 'home' 
+});
+});
+
+document.getElementById("btnprojetos").addEventListener("click", function () {
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+'event': 'click_cta',
+'cta_name': 'projetos' 
+});
+});
+
+document.getElementById("btncontato").addEventListener("click", function () {
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+'event': 'click_cta',
+'cta_name': 'contato' 
 });
 });
 </script>
