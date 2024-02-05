@@ -43,7 +43,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="header">
     <a href="#"  class="logo">Portfolio</a>
 
-    <nav class="navegação">
+    <nav id="menu" class="navegação">
 
       <a href="#inicio">Inicio</a>
 
@@ -175,6 +175,14 @@ window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
 'event': 'click_cta',
 'cta_name': 'saiba mais'
+});
+});
+
+document.getElementById("menu").addEventListener("click", function () {
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+'event': 'click_menu',
+'menu_name': 'item_menu'
 });
 });
 </script>
